@@ -332,7 +332,6 @@ function_verify() {
         permited=$(curl -sSL "https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Bot/Control-Bot" | awk '{print $1}')
         [[ -z $keybot ]] && echo $link >/bin/downloadbot || echo -e "$(ofus $keybot)" >/bin/downloadbot
     }
-    permited=$(curl -sSL "https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Bot/Control-Bot" | awk '{print $1}')
     [[ $(echo $permited | grep "${IP}") = "" ]] || {
         clear
         msg -bar
