@@ -1,0 +1,7 @@
+#!/bin/bash
+
+invalido_src () {
+bot_retorno="$LINE\n"
+         bot_retorno+="Comando MANCO MANCO ( INVALIDO XD! )\n"
+         bot_retorno+="$LINE\n"
+}
