@@ -57,12 +57,14 @@ msg -bar
 } || read -p " Key de Autorizacion : " keybot 
 [[ -z $keybot ]] && {
 rm -f /bin/downloadbot
-[[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
-permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}') 
-} || {
-permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}')
-}
-permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}')
+[[ -e /bin/downloadbot ]] && link="$(cat </bin/downloadbot)" || link='https://raw.githubusercontent.com'
+        [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
+        permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
+    } || {
+        permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
+        [[ -z $keybot ]] && echo $link >/bin/downloadbot || echo -e "$(ofus $keybot)" >/bin/downloadbot
+    }
+    permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
