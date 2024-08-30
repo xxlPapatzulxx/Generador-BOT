@@ -62,6 +62,7 @@ permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '
 } || {
 permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}')
 }
+permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}')
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
