@@ -67,7 +67,7 @@ permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | grep 
   echo -e "\n\n\n\e[31m====================================================="
   echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) FUE RECHAZADA!"
   echo -e "     $link No AUTORIZADA el ACCESO "
-  echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
+  echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @Jerry_SBG"
   echo -e "\e[31m=====================================================\n\n\n\e[0m"
   [[ -e "/bin/ShellBot.sh" ]] && rm -f /bin/ShellBot.sh
     exit 1
@@ -76,8 +76,8 @@ permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | grep 
   clear
   echo -e "\n\n\n\e[32m====================================================="
   echo -e "\e[32m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!"
-  echo -e "      Mediante  $link Autorida por @ChumoGH"
-  echo -e "      SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
+  echo -e "      Mediante  $link Autorida por @Jerry_SBG"
+  echo -e "      SI DESEAS USAR EL BOTGEN CONTACTE A @Jerry_SBG"
   echo -e "\e[32m=====================================================\n\n\n\e[0m"
   CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
   [[ -e /etc/nivbot ]] && { 
@@ -498,7 +498,7 @@ echo "Respaldando TOKEN y ADMINISTRADOR"
 [[ -e /etc/ADM-db/User-ID ]] && mv /etc/ADM-db/User-ID /root/User-ID
 [[ -e /etc/ADM-db/ress ]] && mv /etc/ADM-db/ress /root/ress
 [[ -e /etc/ADM-db/sources/costes ]] && mv /etc/ADM-db/sources/costes /root/costes
-[[ $(cat < /etc/ADM-db/resell) != "@ChumoGH" ]] && mv /etc/ADM-db/resell /root/resell
+[[ $(cat < /etc/ADM-db/resell) != "@Jerry_SBG" ]] && mv /etc/ADM-db/resell /root/resell
 rm -rf /etc/ADM-db/sources/gerar_key && download
 }
 
