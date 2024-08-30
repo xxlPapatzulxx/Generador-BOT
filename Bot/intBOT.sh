@@ -58,9 +58,9 @@ msg -bar
 [[ -z $keybot ]] && {
 rm -f /bin/downloadbot
 [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
-permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | grep $MYIP | awk '{print $1}') 
+permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}') 
 } || {
-permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | grep $MYIP | awk '{print $1}')
+permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}')
 }
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
