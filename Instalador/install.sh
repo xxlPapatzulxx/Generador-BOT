@@ -1,5 +1,7 @@
 ##!/bin/bashlink
 #Instalador del BOT
+rm -rf install.sh
+clear
 coo=1
 IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
