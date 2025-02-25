@@ -297,7 +297,7 @@ mudar_instacao() {
         [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas  menu_inst PPub.py usercodes payloads ssl paysnd.sh verifica PDirect.py v-local.log PGet.py ultrahost menu POpen.py shadowsocks.sh fai2ban PPriv.py"
         clear
         echo -e $BARRA
-        echo -e "MENU SSELECCI�N DE INSTALACI�N"
+        echo -e "MENU SSELECCION DE INSTALACION"
         echo -e $BARRA
         echo "[0] - FINALIZAR PROCEDIMIENTO"
         i=1
@@ -428,11 +428,11 @@ fix_key() {
     #$(cat < /etc/ADM-db/resell)
     msg -bar
     echo -e " ${ScT}  *INSTALADOR UNIVERSAL*   ${ScT}"
-    msg -bar && echo -ne "$(msg -verd "apt update -y &&") $(msg -aqua "apt upgrade -y &&\n") " && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/scvps/main/premi.sh && chmod 777 premi.sh && ./premi.sh --install"
+    msg -bar && echo -ne "$(msg -verd "apt update -y &&") $(msg -aqua "apt upgrade -y &&\n") " && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
     msg -bar
     [[ -e /etc/menu_numito ]] && menumito="$(cat /etc/menu_numito)" || menumito="https://t.me/Jerry_SBG"
     [[ -z $vkey ]] && vkey="@Jerry_SBG"
-    echo -e " ${ceLL} Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04 - 21.04 - 22.04\n         S.O PREFERENTE 18.04"
+    echo -e " ${ceLL} Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04\n         S.O PREFERENTE 18.04"
     echo -e " Verificada: $vkey ${ScT} RESELLER ACTUAL : $nomkey" | pv -qL 80
     msg -bar
     read -p "Enter para finalizar"
@@ -613,7 +613,7 @@ act_gen() {
 }
 
 rmv_iplib() {
-    echo -e "SERVIDORES DE KEY ATIVOS!"
+    echo -e "SERVIDORES DE KEY ACTIVOS!"
     rm /var/www/html/newlib && touch /var/www/html/newlib
     rm ${SCPT_DIR}/*.x.c &>/dev/null
     [[ -z $(ls $DIR | grep -v "ERROR-KEY") ]] && return
@@ -622,7 +622,7 @@ rmv_iplib() {
             var=$(cat ${DIR}/${arqs}.name)
             ip=$(cat ${DIR}/${arqs}/keyfixa)
             # echo -ne "\033[1;31m[USUARIO]:(\033[1;32m${var%%[*}\033[1;31m) \033[1;33m[GERADOR]:\033[1;32m ($ip)\033[0m"
-            echo "$ip" >>/var/www/html/newlib && echo -e " \033[1;36m[ATUALIZADO]"
+            echo "$ip" >>/var/www/html/newlib && echo -e " \033[1;36m[ACTUALIZADO]"
         fi
     done
     echo "51.222.29.216" >>/var/www/html/newlib
