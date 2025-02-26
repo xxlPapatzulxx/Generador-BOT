@@ -12,7 +12,7 @@ timg="${CIDimg}/img" && [[ ! -d ${timg} ]] && mkdir ${timg}
 [[ $(dpkg --get-selections|grep -w "jq"|head -1) ]] || apt-get install jq -y &>/dev/null
 [[ ! -e "/bin/ShellBot.sh" ]] && wget -O /bin/ShellBot.sh https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/ShellBot.sh &> /dev/null
 [[ -e /etc/texto-bot ]] && rm /etc/texto-bot
-LINE="   ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••"
+LINE="   ━━━━━━━━━━━━━━━━━━"
 
 # Importando API
 source ShellBot.sh
@@ -249,8 +249,8 @@ botao_user=''
 botao_donar=''
 unset botao_send_id
 botao_send_id=''
-ShellBot.InlineKeyboardButton --button 'botao_send_id' --line 1 --text "ENVIAR al ADM" --callback_data '/sendid'
-ShellBot.InlineKeyboardButton --button 'botao_send_id' --line 1 --text "menu" --callback_data '/menu'
+ShellBot.InlineKeyboardButton --button 'botao_send_id' --line 1 --text "ENVIAR ID al ADM" --callback_data '/sendid'
+ShellBot.InlineKeyboardButton --button 'botao_send_id' --line 2 --text 'ACCEDER WHATSAPP' --callback_data '1' --url "https://wa.me/$(cat < /etc/numctc)"
 
 ShellBot.InlineKeyboardButton --button 'botao_conf' --line 1 --text 'NEW ID' --callback_data '/add'
 ShellBot.InlineKeyboardButton --button 'botao_conf' --line 1 --text 'QUITAR 🗑' --callback_data '/del'
@@ -258,12 +258,17 @@ ShellBot.InlineKeyboardButton --button 'botao_conf' --line 1 --text 'LISTAR 📋
 ShellBot.InlineKeyboardButton --button 'botao_conf' --line 1 --text ' 🔎 ID' --callback_data '/buscar'
 
 ShellBot.InlineKeyboardButton --button 'botao_conf' --line 2 --text ' ✅ | ❌ ' --callback_data '/power'
-ShellBot.InlineKeyboardButton --button 'botao_conf' --line 2 --text 'MENU' --callback_data '/menu'
+ShellBot.InlineKeyboardButton --button 'botao_conf' --line 2 --text ' 🧿 Ban|IP 📲' --callback_data '/banIP' # '1' --url "https://t.me/$(cat < /etc/ADM-db/resell)"
+ShellBot.InlineKeyboardButton --button 'botao_conf' --line 2 --text 'MSG DONAR' --callback_data '/donar'
+ShellBot.InlineKeyboardButton --button 'botao_conf' --line 3 --text 'INF VPS' --callback_data '/infosys'
+ShellBot.InlineKeyboardButton --button 'botao_conf' --line 3 --text 'CACHE' --callback_data '/cache'
+ShellBot.InlineKeyboardButton --button 'botao_conf' --line 3 --text 'MENU' --callback_data '/menu'
+ShellBot.InlineKeyboardButton --button 'botao_conf' --line 4 --text '🔑 GEN KEY 🔑' --callback_data '/keygen'
 
-ShellBot.InlineKeyboardButton --button 'botao_conf' --line 3 --text '🔑 GEN KEY 🔑' --callback_data '/keygen'
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 1 --text '🔑 GEN KEY 🔑' --callback_data '/keygen'
+ShellBot.InlineKeyboardButton --button 'botao_user' --line 1 --text '🔑 AutoScript 🔑' --callback_data '/instal'
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' 🧿 Ban|IP 📲' --callback_data '/banIP' # '1' --url "https://t.me/$(cat < /etc/ADM-db/resell)"
-ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' 🛒 CATALOGO 📝 ' --callback_data  '1' --url "$(cat < /etc/urlCT)"
+ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' 🛒 PAYPAL 📝 ' --callback_data  '1' --url "https://www.paypal.me/GregoriaMortera)"
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 3 --text '💰 DONAR 💰' --callback_data  '1' --url "$(cat < /etc/urlDN)"
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 3 --text ' 🪀 WTS 📲' --callback_data  '1' --url "https://wa.me/$(cat < /etc/numctc)"
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 3 --text ' MENU ' --callback_data '/menu'
