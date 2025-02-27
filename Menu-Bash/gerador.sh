@@ -428,7 +428,7 @@ fix_key() {
     #$(cat < /etc/ADM-db/resell)
     msg -bar
     echo -e " ${ScT}  *INSTALADOR UNIVERSAL*   ${ScT}"
-    msg -bar && echo -ne "$(msg -verd "apt update -y &&") $(msg -aqua "apt upgrade -y &&\n") " && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
+    msg -bar && echo -ne "$(msg -aqua "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
     msg -bar
     [[ -e /etc/menu_numito ]] && menumito="$(cat /etc/menu_numito)" || menumito="https://t.me/Jerry_SBG"
     [[ -z $vkey ]] && vkey="@Jerry_SBG"
@@ -473,7 +473,7 @@ att_gen_key() {
                     rm $KEYDIR/*.x.c &>/dev/null
                 done
                 arqsx=$(ofus "$IP:8888/$arqs/$LIST")
-                echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ATUALIZADA!)\033[0m"
+                echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ACTUALIZADA!)\033[0m"
             fi
             let i++
         done
