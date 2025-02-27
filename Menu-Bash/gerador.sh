@@ -279,7 +279,7 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 [[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
 DIR="/etc/http-shell"
-LIST="-SPVweN"
+LIST="-YRR3J"
 wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/v-local.log &>/dev/null
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat <${SCPT_DIR}/v-local.log)
@@ -397,9 +397,9 @@ ofus() {
 
 fix_key() {
     unset nomkey
-    echo " Bienvenido, Porfavor dijita el Nombre del DUE�O de la KEYs"
+    echo " Bienvenido, Porfavor dijita el Nombre del DUEÑO de la KEYs"
     echo "             DIJITA  0  PARA REGRESAR "
-    read -p " RESELLER deL Keys : " nomkey
+    read -p " RESELLER de La Keys : " nomkey
     [[ $nomkey = 0 ]] && return
     [[ -z $nomkey ]] && {
         [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/menu_credito)"
@@ -412,7 +412,7 @@ fix_key() {
     read -p "INGRESA NOMBRE DE VENDEDOR : " vkey
     clear
     msg -bar
-    echo -e "$numk Keys activas,de $nomkey y esperando instalaci�n!"
+    echo -e "$numk Keys activas,de $nomkey y Esperando Instalacion!"
     echo "$nomkey" >${SCPT_DIR}/menu_credito
     for ((w = 0; w < $numk; w++)); do
         valuekey="$(date | md5sum | head -c11)"
@@ -428,7 +428,7 @@ fix_key() {
     #$(cat < /etc/ADM-db/resell)
     msg -bar
     echo -e " ${ScT}  *INSTALADOR UNIVERSAL*   ${ScT}"
-    msg -bar && echo -ne "$(msg -aqua "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
+    msg -bar && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
     msg -bar
     [[ -e /etc/menu_numito ]] && menumito="$(cat /etc/menu_numito)" || menumito="https://t.me/Jerry_SBG"
     [[ -z $vkey ]] && vkey="@Jerry_SBG"
