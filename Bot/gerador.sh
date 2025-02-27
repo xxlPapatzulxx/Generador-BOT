@@ -93,7 +93,7 @@ title() {
 # finalizacion de tareas
 enter() {
     msg -bar
-    text="►► Presione enter para continuar ◄◄"
+    text="►► Presione ENTER para Continuar ◄◄"
     if [[ -z $1 ]]; then
         print_center -ama "$text"
     else
@@ -223,8 +223,7 @@ tittle() {
     killall kswapd0 ksoftirqd >/dev/null 2>&1
     clear && clear
     msg -bar
-    echo -e "\033[7;49;35m    ${TTini} GEN JerrySBG${TTcent}VPS ${TTfin}      \033[0m"
-    msg -bar
+    echo -e "  \033[7;49;35m${TTini} GEN JerrySBG${TTcent}VPS ${TTfin}   \033[0m"
 }
 
 check_ip() {
@@ -281,9 +280,9 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
 DIR="/etc/http-shell"
 LIST="-SPVweN"
+wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/v-local.log &>/dev/null
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat <${SCPT_DIR}/v-local.log)
-./gerador.sh: line 89: /etc/SCRIPT/v-local.log: No such file or directory
 txt[315]=" ${FlT} JerrySBG Keygen ${FlT} IS UPDATED!"
 txt[316]=" ${aLerT} JerrySBG Keygen ${aLerT} NEEDS UPDATE!"
 
@@ -298,7 +297,7 @@ mudar_instacao() {
         [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas  menu_inst PPub.py usercodes payloads ssl paysnd.sh verifica PDirect.py v-local.log PGet.py ultrahost menu POpen.py shadowsocks.sh fai2ban PPriv.py"
         clear
         echo -e $BARRA
-        echo -e "MENU SSELECCI�N DE INSTALACI�N"
+        echo -e "MENU SSELECCION DE INSTALACION"
         echo -e $BARRA
         echo "[0] - FINALIZAR PROCEDIMIENTO"
         i=1
@@ -403,7 +402,7 @@ fix_key() {
     read -p " RESELLER deL Keys : " nomkey
     [[ $nomkey = 0 ]] && return
     [[ -z $nomkey ]] && {
-        [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://www.dropbox.com/s/z38hj1mz3q9krso/menu_credito")"
+        [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/menu_credito)"
     }
     msg -bar
     echo " Bienvenido, Porfavor ingresa el numero de keys a generar"
@@ -429,11 +428,11 @@ fix_key() {
     #$(cat < /etc/ADM-db/resell)
     msg -bar
     echo -e " ${ScT}  *INSTALADOR UNIVERSAL*   ${ScT}"
-    msg -bar && echo -ne "$(msg -verd "apt update -y &&") $(msg -aqua "apt upgrade -y &&\n") " && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/scvps/main/premi.sh && chmod 777 premi.sh && ./premi.sh --install"
+    msg -bar && echo -ne "$(msg -aqua "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
     msg -bar
     [[ -e /etc/menu_numito ]] && menumito="$(cat /etc/menu_numito)" || menumito="https://t.me/Jerry_SBG"
-    [[ -z $vkey ]] && vkey="@JerrySBG"
-    echo -e " ${ceLL} Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04 - 21.04 - 22.04\n         S.O PREFERENTE 18.04"
+    [[ -z $vkey ]] && vkey="@Jerry_SBG"
+    echo -e " ${ceLL} Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04\n         S.O PREFERENTE 18.04"
     echo -e " Verificada: $vkey ${ScT} RESELLER ACTUAL : $nomkey" | pv -qL 80
     msg -bar
     read -p "Enter para finalizar"
@@ -474,7 +473,7 @@ att_gen_key() {
                     rm $KEYDIR/*.x.c &>/dev/null
                 done
                 arqsx=$(ofus "$IP:8888/$arqs/$LIST")
-                echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ATUALIZADA!)\033[0m"
+                echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ACTUALIZADA!)\033[0m"
             fi
             let i++
         done
@@ -567,7 +566,7 @@ start_gen() {
 killall http-server.sh
 screen -dmS generador /bin/http-server.sh -start
 echo  #' >/bin/genon
-            chmod +x /bin/genon
+            chmod +rwx /bin/genon
             echo "00 * * * * root bash /bin/genon" >>/etc/crontab
             service cron restart
         } || {
@@ -591,7 +590,7 @@ message_gen() {
     echo $MSGNEW >/etc/menu_ito
     cat /etc/menu_ito >${SCPT_DIR}/menu_credito
     read -p "Ingresa tu Numero de Contacto o tu ALIAS de TELEGRAM: " MSGNEW
-    echo $MSGNEW >/etc/menu_numito && chmod +x /etc/menu_numito
+    echo $MSGNEW >/etc/menu_numito && chmod +rwx /etc/menu_numito
     msg -bar
 }
 
@@ -614,7 +613,7 @@ act_gen() {
 }
 
 rmv_iplib() {
-    echo -e "SERVIDORES DE KEY ATIVOS!"
+    echo -e "SERVIDORES DE KEY ACTIVOS!"
     rm /var/www/html/newlib && touch /var/www/html/newlib
     rm ${SCPT_DIR}/*.x.c &>/dev/null
     [[ -z $(ls $DIR | grep -v "ERROR-KEY") ]] && return
@@ -623,7 +622,7 @@ rmv_iplib() {
             var=$(cat ${DIR}/${arqs}.name)
             ip=$(cat ${DIR}/${arqs}/keyfixa)
             # echo -ne "\033[1;31m[USUARIO]:(\033[1;32m${var%%[*}\033[1;31m) \033[1;33m[GERADOR]:\033[1;32m ($ip)\033[0m"
-            echo "$ip" >>/var/www/html/newlib && echo -e " \033[1;36m[ATUALIZADO]"
+            echo "$ip" >>/var/www/html/newlib && echo -e " \033[1;36m[ACTUALIZADO]"
         fi
     done
     echo "51.222.29.216" >>/var/www/html/newlib
@@ -633,7 +632,7 @@ rmv_iplib() {
 
 bot_menu() {
     [[ -e /etc/nivbot ]] || echo "0" >/etc/nivbot
-    [[ -d /etc/ADM-db ]] && chmod +x /etc/ADM-db/*
+    [[ -d /etc/ADM-db ]] && chmod +rwx /etc/ADM-db/*
     echo -ne "\033[1;31m[ ! ] RESPALDANDO USUARIO ADMINISTRADOR "
     (
         [[ -e /etc/ADM-db/sources/costes ]] && mv /etc/ADM-db/sources/costes $HOME/costes
@@ -647,7 +646,7 @@ bot_menu() {
     ) && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
     rm -rf /etc/ADM-db
     CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-    [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://www.dropbox.com/s/w1jazor40xpifh4/intBOT.sh &>/dev/null && chmod +x ${CIDdir}/confbot.sh
+    [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Code-BOT-General/intBOT.sh &>/dev/null && chmod +rwx ${CIDdir}/confbot.sh
     sed -i -e 's/\r$//' ${CIDdir}/confbot.sh
     source ${CIDdir}/confbot.sh && rm -f ${CIDdir}/confbot.sh
     bot_conf
@@ -762,7 +761,7 @@ dropIP() {
     unset PIDGEN
     if [[ -e /var/www/html/ChumoGH/VPSbot/main/TeleBotGen/Control/Control-Bot ]]; then
         echo -e "[Unit]
-Description=BotGen Service by @JerrySBG
+Description=BotGen Service by @Jerry_SBG
 After=network.target
 StartLimitIntervalSec=0
 
@@ -806,7 +805,7 @@ menau() {
         figlet -f smslant "$(cat </etc/valkey)" | lolcat
         msg -bar
     } || {
-        figlet -p -f smslant "@JerrySBG" | lolcat
+        figlet -p -f smslant "@Jerry_SBG" | lolcat
         msg -bar
     }
     [[ ! $PID_GEN ]] && PID_GEN="\033[0;35m[\033[0;31mDETENIDO\033[0;35m]" || PID_GEN="\033[0;35m[\033[0;36mWORKING\033[0;35m]"
@@ -817,7 +816,7 @@ menau() {
     } || PID_BGEN1="\033[0;35m[\033[0;36mFUNCIONANDO\033[0;35m]" && lim_menu='12'
     ports_
     [[ -e /etc/ADM-db/limit ]] && limcont=$(cat /etc/ADM-db/limit)
-    [[ "${limcont}" -ge "998" ]] && limted="�36" || {
+    [[ "${limcont}" -ge "998" ]] && limted="50" || {
         [[ -e /etc/ADM-db/limit ]] && limted=$(cat /etc/ADM-db/limit)
     }
     [[ -z $limted ]] && limted="No Found"
