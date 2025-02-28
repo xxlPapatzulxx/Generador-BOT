@@ -1,5 +1,6 @@
 ##!/bin/bashlink
 #Instalador del BOT
+rm -rf install.sh
 MYIP=$(wget -qO- ipinfo.io/ip)
 Isadmin=$(curl -sS https://raw.githubusercontent.com/JerrySBG/permission/main/ip | grep $MYIP | awk '{print $2}')
 checking_sc() {
