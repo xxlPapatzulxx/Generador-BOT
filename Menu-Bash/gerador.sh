@@ -268,7 +268,8 @@ ports_() {
     echo -e "\033[1;34m ${TOP}\033[1;31m TOTAL:\033[1;32m "$mt "\033[1;34m ${TOP} \033[1;31m Libre:\033[1;32m "$ram2 "\033[1;34m ${TOP} \033[1;31m Usada:\033[1;32m"$ram3
     echo -e "\033[1;34m ${TOP}\033[1;31m Uso RAM: \033[1;32m"$_usor "\033[1;34m${TOP}\033[1;31m Uso CPU: \033[1;32m$_usop \033[1;34m ${TOP}\033[1;31m Cache:\033[1;32m"$mb # $CPU"%"
     msg -bar
-    echo -e "\033[0;31mSystem:\033[0;32m$(cat /etc/issue.net) \033[0;31mIP:\033[0;32m $(wget -qO- ipv4.icanhazip.com)"
+    echo -e "\033[0;31mSystem:\033[0;32m$(wget -qO- https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/menu_credito) \033[0;31mIP:\033[0;32m $(wget -qO- ipv4.icanhazip.com)"
+    #echo -e "\033[0;31mSystem:\033[0;32m$(cat /etc/issue.net) \033[0;31mIP:\033[0;32m $(wget -qO- ipv4.icanhazip.com)"
     msg -bar
     echo ""
     echo -ne "$(msg -verd "  Keys Usadas") $(msg -azu " : ") " && msg -bra "\033[1;41m $(cat $IVAR) $porta"
