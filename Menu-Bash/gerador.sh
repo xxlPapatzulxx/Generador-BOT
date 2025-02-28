@@ -838,6 +838,7 @@ menau() {
     echo -e "\033[0;35m[\033[0;36m9\033[0;35m] \033[0;34m<\033[0;33m Actualizar KEY"
     echo -e "\033[0;35m[\033[0;36m10\033[0;35m] \033[0;34m<\033[0;33m CONFIGURAR BOT DE TELEGRAM $PID_BGEN1\033[0m"
     [[ -z $add_fun ]] || echo -e "\033[0;35m[\033[0;36m11\033[0;35m] \033[0;34m<\033[0;33m + / - CREDITOS Por ID"
+    echo -e "\033[0;35m[\033[0;36m12\033[0;35m] \033[0;34m<\033[0;33m REGRESAR AL MENU SCRIPT"
     echo -e "\033[0;35m[\033[0;36m0\033[0;35m] \033[0;34m<\033[0;33m SALIR"
     msg -bar
 
@@ -863,5 +864,6 @@ while :; do
     9) att_gen_key ;;
     10) bot_menu ;;
     11) alter_id ;;
+    12) menu ;;
     esac
 done
