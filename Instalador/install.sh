@@ -1,7 +1,7 @@
 ##!/bin/bashlink
 #Instalador del BOT
 MYIP=$(wget -qO- ipinfo.io/ip)
-Isadmin=$(curl -sS https://raw.githubusercontent.com/JerrySBG/permission/main/ip | grep $MYIP | awk '{print $3}')
+Isadmin=$(curl -sS https://raw.githubusercontent.com/JerrySBG/permission/main/ip | grep $MYIP | awk '{print $2}')
 checking_sc() {
 if [ "$Isadmin" = "VIP" ]; then
 echo -ne
