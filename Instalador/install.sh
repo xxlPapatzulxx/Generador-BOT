@@ -1,28 +1,6 @@
 ##!/bin/bashlink
 #Instalador del BOT
 rm -rf install.sh
-MYIP=$(wget -qO- ipinfo.io/ip)
-Isadmin=$(curl -sS https://raw.githubusercontent.com/JerrySBG/permission/main/ip | grep $MYIP | awk '{print $2}')
-checking_sc() {
-if [ "$Isadmin" = "VIP" ]; then
-echo -ne
-else
-systemctl stop nginx
-echo -e "${COLOR1}╭═════════════════════════════════════════════════╮${NC}"
-echo -e "${COLOR1}│${NC}${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •                 ${NC}${COLOR1}│ $NC"
-echo -e "${COLOR1}╰═════════════════════════════════════════════════╯${NC}"
-echo -e "${COLOR1}╭═════════════════════════════════════════════════╮${NC}"
-echo -e "${COLOR1}│             ${RED}PERMISO DENEGADO !${NC}                  ${COLOR1}│"
-echo -e "${COLOR1}│   ${YELLOW}TU VPS${NC} $ipsaya \033[0;36mACABA DE SER BANEADA${NC}      ${COLOR1}│"
-echo -e "${COLOR1}│     ${YELLOW}COMPRA ACCESO AL SCRIPT POR FAVOR ${NC}          ${COLOR1}│"
-echo -e "${COLOR1}│             \033[0;32mTELEGRAM: @Jerry_SBG ${NC}               ${COLOR1}│"
-echo -e "${COLOR1}│             \033[0;32mWHATSAPP: 0529241293310 ${NC}            ${COLOR1}│"
-echo -e "${COLOR1}╰═════════════════════════════════════════════════╯${NC}"
-exit
-fi
-}
-checking_sc
-rm -rf install.sh
 clear
 coo=1
 IVAR="/etc/http-instas"
