@@ -280,7 +280,7 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 [[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
 DIR="/etc/http-shell"
-LIST="J3RRY-"
+LIST="-YRR3J"
 wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/v-local.log &>/dev/null
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat <${SCPT_DIR}/v-local.log)
