@@ -1,7 +1,7 @@
 #!/bin/bash
 IVAR="/etc/http-instas"
 onliCHECK=/var/www/html/ChumoGH
-LIST="$(echo "J3RRY-" | rev)"
+LIST="$(echo "NewVPS-" | rev)"
 [[ -d /var/www/html/ChumoGH ]] || mkdir ${onliCHECK}
 install_fun () {
 apt-get install netcat -y
@@ -142,7 +142,7 @@ ID="$(cat ${FILE2}.name)" && ID="$(echo $ID | awk '{print $1}' | sed -e 's/[^0-9
 TOKEN="$(cat /etc/ADM-db/token)"
 urlBOT="https://api.telegram.org/bot$TOKEN/sendMessage"
 MENSAJE="  ━━━━━━━━━━━━━━━━━━\n"
-MENSAJE+="   📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩\n"
+MENSAJE+="       📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩\n"
 MENSAJE+=" ━━━━━━━━━━━━━━━━━━\n"
 MENSAJE+=" ${_key}\n"
 #MENSAJE+=" =========== ☝️ USADA ☝ ============\n"
