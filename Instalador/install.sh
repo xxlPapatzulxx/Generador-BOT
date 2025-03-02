@@ -453,7 +453,7 @@ atualiza_fun() {
     done
     mkdir -p /etc/SCRIPT
     mv -f /root/update/* /etc/SCRIPT/
-    wget -q -O /usr/bin/sbg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Menu-Bash/gerador.sh && chmod +rwx /usr/bin/gerar
+    wget -q -O /usr/bin/sbg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Menu-Bash/gerador.sh && chmod +rwx /usr/bin/sbg
     cd $HOME
     msg -bar
     echo -e "\033[1;92m           DIGITE EL COMANDO: \033[1;33msbg  "
