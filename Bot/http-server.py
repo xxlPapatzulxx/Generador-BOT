@@ -72,6 +72,7 @@ if [[ -e ${FILE} ]]; then
 STATUS_NUMBER="200"
 STATUS_NAME="Found"
 ENV_ARQ="True"
+RESELL="$(cat /var/www/$KEY/menu_credito)"
  if [[ -e ${FILE2}/GERADOR ]]; then
    if [[ ${USRIP} != "ERRO" ]]; then
     FILE="${DIR}/ERROR-KEY"
@@ -81,7 +82,7 @@ ENV_ARQ="True"
  else
    if [[ ${USRIP} = "ERRO" ]]; then
     FILE="${DIR}/ERROR-KEY"
-    echo "KEY DE JerrySBG!" > ${FILE}
+    echo "${RESELL}" > ${FILE}
     ENV_ARQ="False"
    fi
  fi
