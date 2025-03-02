@@ -4,10 +4,10 @@ unset readvalue
 [[ ! -d /etc/http-shell ]] && mkdir /etc/http-shell
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas menu_inst PPub.py usercodes payloads ssl paysnd.sh verifica PDirect.py v-local.log PGet.py ultrahost menu POpen.py shadowsocks.sh fai2ban PPriv.py"
 IVAR="/etc/http-instas"
-source <(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/msg) >/dev/null
+source <(curl -sSL https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/msg) >/dev/null
 #!/bin/bash
 # menu maker (opciones 1, 2, 3,.....)
-flech='➮' cOlM='⁙' && TOP='‣' && TTini='=====>>►► ⚜️' && cG='/c' && TTfin='⚜️ ◄◄<<=====' && TTcent='💥' && RRini='【  ★' && RRfin='★  】' && CHeko='✅' && ScT='🛡️' && FlT='⚔️' && BoLCC='🪦' && ceLL='🧬' && aLerT='⚠️' && _kl1='ghkey' && lLaM='🔥' && pPIniT='∘' && bOTg='🤖' && kL10='tc' && rAy='⚡' && tTfIn='】' && TtfIn='【' tTfLe='►' && am1='/e' && rUlq='🔰' && h0nG='🍄' && lLav3='🗝️' && m3ssg='📩' && pUn5A='⚜' && p1t0='•' nib="${am1}${kL10}"
+flech='➮' cOlM='⁙' && TOP='‣' && TTini='=====>>►► 🐲' && cG='/c' && TTfin='🐲 ◄◄<<=====' && TTcent='💥' && RRini='【  ★' && RRfin='★  】' && CHeko='✅' && ScT='🛡️' && FlT='⚔️' && BoLCC='🪦' && ceLL='🧬' && aLerT='⚠️' && _kl1='ghkey' && lLaM='🔥' && pPIniT='∘' && bOTg='🤖' && kL10='tc' && rAy='⚡' && tTfIn='】' && TtfIn='【' tTfLe='►' && am1='/e' && rUlq='🔰' && h0nG='🍄' && lLav3='🗝️' && m3ssg='📩' && pUn5A='⚜' && p1t0='•' nib="${am1}${kL10}"
 cOpyRig='©' && mbar2=' •••••••••••••••••••••••'
 
 menu_func() {
@@ -201,7 +201,7 @@ del() {
 
 [[ -d /bin/ejecutar ]] && {
     [[ ! -e /etc/cghkey ]] && rm -rf /etc/adm-lite
-    [[ -e /bin/ejecutar/msg ]] || wget -q -O /bin/ejecutar/msg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/msg
+    [[ -e /bin/ejecutar/msg ]] || wget -q -O /bin/ejecutar/msg https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/msg
 } || mkdir /bin/ejecutar
 cor[0]="\033[0m"
 cor[1]="\033[1;34m"
@@ -268,8 +268,7 @@ ports_() {
     echo -e "\033[1;34m ${TOP}\033[1;31m TOTAL:\033[1;32m "$mt "\033[1;34m ${TOP} \033[1;31m Libre:\033[1;32m "$ram2 "\033[1;34m ${TOP} \033[1;31m Usada:\033[1;32m"$ram3
     echo -e "\033[1;34m ${TOP}\033[1;31m Uso RAM: \033[1;32m"$_usor "\033[1;34m${TOP}\033[1;31m Uso CPU: \033[1;32m$_usop \033[1;34m ${TOP}\033[1;31m Cache:\033[1;32m"$mb # $CPU"%"
     msg -bar
-    echo -e "\033[0;31mSystem:\033[0;32m$(wget -qO- https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/menu_credito) \033[0;31mIP:\033[0;32m $(wget -qO- ipv4.icanhazip.com)"
-    #echo -e "\033[0;31mSystem:\033[0;32m$(cat /etc/issue.net) \033[0;31mIP:\033[0;32m $(wget -qO- ipv4.icanhazip.com)"
+    echo -e "\033[0;31mSystem:\033[0;32m$(cat /etc/issue.net) \033[0;31mIP:\033[0;32m $(wget -qO- ipv4.icanhazip.com)"
     msg -bar
     echo ""
     echo -ne "$(msg -verd "  Keys Usadas") $(msg -azu " : ") " && msg -bra "\033[1;41m $(cat $IVAR) $porta"
@@ -280,8 +279,8 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 [[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
 DIR="/etc/http-shell"
-LIST="-YRR3J"
-wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/v-local.log &>/dev/null
+LIST="-SPVweN"
+wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/adm-lite/v-local.log &>/dev/null
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat <${SCPT_DIR}/v-local.log)
 txt[315]=" ${FlT} JerrySBG Keygen ${FlT} IS UPDATED!"
@@ -298,7 +297,7 @@ mudar_instacao() {
         [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas  menu_inst PPub.py usercodes payloads ssl paysnd.sh verifica PDirect.py v-local.log PGet.py ultrahost menu POpen.py shadowsocks.sh fai2ban PPriv.py"
         clear
         echo -e $BARRA
-        echo -e "MENU SSELECCION DE INSTALACION"
+        echo -e "MENU SSELECCIÓN DE INSTALACIÓN"
         echo -e $BARRA
         echo "[0] - FINALIZAR PROCEDIMIENTO"
         i=1
@@ -398,12 +397,12 @@ ofus() {
 
 fix_key() {
     unset nomkey
-    echo " Bienvenido, Porfavor dijita el Nombre del DUEÑO de la KEYs"
+    echo " Bienvenido, Por favor digita el Nombre del DUEÑO de la KEYs"
     echo "             DIJITA  0  PARA REGRESAR "
-    read -p " RESELLER de La Keys : " nomkey
+    read -p " RESELLER deL Keys : " nomkey
     [[ $nomkey = 0 ]] && return
     [[ -z $nomkey ]] && {
-        [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/menu_credito)"
+        [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://www.dropbox.com/s/z38hj1mz3q9krso/menu_credito")"
     }
     msg -bar
     echo " Bienvenido, Porfavor ingresa el numero de keys a generar"
@@ -413,7 +412,7 @@ fix_key() {
     read -p "INGRESA NOMBRE DE VENDEDOR : " vkey
     clear
     msg -bar
-    echo -e "$numk Keys activas,de $nomkey y Esperando Instalacion!"
+    echo -e "$numk Keys activas,de $nomkey y esperando instalaci�n!"
     echo "$nomkey" >${SCPT_DIR}/menu_credito
     for ((w = 0; w < $numk; w++)); do
         valuekey="$(date | md5sum | head -c11)"
@@ -431,9 +430,9 @@ fix_key() {
     echo -e " ${ScT}  *INSTALADOR UNIVERSAL*   ${ScT}"
     msg -bar && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
     msg -bar
-    [[ -e /etc/menu_numito ]] && menumito="$(cat /etc/menu_numito)" || menumito="https://t.me/Jerry_SBG"
+    [[ -e /etc/menu_numito ]] && menumito="$(cat /etc/menu_numito)" || menumito="https://t.me/ChumoGH_bot"
     [[ -z $vkey ]] && vkey="@Jerry_SBG"
-    echo -e " ${ceLL} Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04\n         S.O PREFERENTE 18.04"
+    echo -e " ${ceLL} Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04 - 21.04 - 22.04\n         S.O PREFERENTE 18.04"
     echo -e " Verificada: $vkey ${ScT} RESELLER ACTUAL : $nomkey" | pv -qL 80
     msg -bar
     read -p "Enter para finalizar"
@@ -456,7 +455,7 @@ att_gen_key() {
     keys=($keys)
     msg -bar
     while [[ -z ${keys[$value]} || -z $value ]]; do
-        read -p "Escolha qual Atualizar[t=todos]: " -e -i 0 value
+        read -p "Escoja cual actualizar[t=todos]: " -e -i 0 value
     done
     [[ $value = 0 ]] && return
     if [[ $value = @(t|T) ]]; then
@@ -494,7 +493,7 @@ att_gen_key() {
             rm $KEYDIR/*.x.c &>/dev/null
         done
         arqsx=$(ofus "$IP:8888/${keys[$value]}/$LIST")
-        echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ATUALIZADA!)\033[0m"
+        echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ACTUALIZADA!)\033[0m"
         read -p "Enter"
         rm ${SCPT_DIR}/*.x.c &>/dev/null
     }
@@ -623,7 +622,7 @@ rmv_iplib() {
             var=$(cat ${DIR}/${arqs}.name)
             ip=$(cat ${DIR}/${arqs}/keyfixa)
             # echo -ne "\033[1;31m[USUARIO]:(\033[1;32m${var%%[*}\033[1;31m) \033[1;33m[GERADOR]:\033[1;32m ($ip)\033[0m"
-            echo "$ip" >>/var/www/html/newlib && echo -e " \033[1;36m[ACTUALIZADO]"
+            echo "$ip" >>/var/www/html/newlib && echo -e " \033[1;36m[ATUALIZADO]"
         fi
     done
     echo "51.222.29.216" >>/var/www/html/newlib
@@ -666,7 +665,7 @@ fum_ver() {
     echo -e "\n"
     echo -e " FILE Contend : ${REQUEST} $(echo ${REQUEST} | wc -c)"
     echo -e "\n"
-    echo -e " VERIFICA, Si tu key Contiene \033[1;45m KEY DE JerrySBG! \033[0m "
+    echo -e " VERIFICA, Si tu key Contiene \033[1;45m KEY DE ChumoGH! \033[0m "
     echo -e "\n"
     msg -ne " Link Key: http://$(ofus $Keey) \n                      "
     IiP=$(ofus "$Keey" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')
@@ -695,7 +694,7 @@ fum_ver() {
     msg -ne " \033[1;42mESTADO :\033[0m "
     [[ -e $HOME/list-key ]] && {
         echo -ne "  "
-        [[ $ofen = "KEY DE JerrySBG!" ]] &&
+        [[ $ofen = "KEY DE ChumoGH!" ]] &&
             echo -e "KEY FUNCIONAL" && rm -f $HOME/list-key && echo -ne "\033[0m"
     } || echo -e " KEY INVALIDA O USADA\033[0m\n"
     #curl -s --connect-timeout 2 ${IiP}:81/${REQUEST}/menu_credito > menu_credito
@@ -838,7 +837,6 @@ menau() {
     echo -e "\033[0;35m[\033[0;36m9\033[0;35m] \033[0;34m<\033[0;33m Actualizar KEY"
     echo -e "\033[0;35m[\033[0;36m10\033[0;35m] \033[0;34m<\033[0;33m CONFIGURAR BOT DE TELEGRAM $PID_BGEN1\033[0m"
     [[ -z $add_fun ]] || echo -e "\033[0;35m[\033[0;36m11\033[0;35m] \033[0;34m<\033[0;33m + / - CREDITOS Por ID"
-    echo -e "\033[0;35m[\033[0;36m12\033[0;35m] \033[0;34m<\033[0;33m REGRESAR AL MENU SCRIPT"
     echo -e "\033[0;35m[\033[0;36m0\033[0;35m] \033[0;34m<\033[0;33m SALIR"
     msg -bar
 
@@ -864,6 +862,5 @@ while :; do
     9) att_gen_key ;;
     10) bot_menu ;;
     11) alter_id ;;
-    12) menu ;;
     esac
 done
