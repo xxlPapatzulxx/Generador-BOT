@@ -1,3 +1,4 @@
+
 ##!/bin/bashlink
 #Instalador del BOT
 coo=1
@@ -44,7 +45,7 @@ tittle() {
     [[ -z $1 ]] && rt='adm-lite' || rt='ADMcgh'
     clear && clear
     msg -bar
-    echo -e "\033[1;44;44m   \033[1;33m=====>>►► 🐲 ChumoGH 💥 Plus 🐲 ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
+    echo -e "\033[1;44;44m   \033[1;33m=====>>►► 🐲 JerrySBG 💥 Plus 🐲 ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
     msg -bar
 }
 in_opcion() {
@@ -327,19 +328,19 @@ function_verify() {
     [[ -z $keybot ]] && {
         [[ -e /bin/downloadbot ]] && link="$(cat </bin/downloadbot)" || link='https://raw.githubusercontent.com'
         [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
-        permited=$(curl -sSL "https://raw.githubusercontent.com/JerrySBG/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
+        permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
     } || {
-        permited=$(curl -sSL "https://raw.githubusercontent.com/JerrySBG/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
+        permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
         [[ -z $keybot ]] && echo $link >/bin/downloadbot || echo -e "$(ofus $keybot)" >/bin/downloadbot
     }
-    permited=$(curl -sSL "https://raw.githubusercontent.com/JerrySBG/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
+    permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
     [[ $(echo $permited | grep "${IP}") = "" ]] || {
         clear
         msg -bar
         echo -e "\n"
         echo -e "\e[31m    LA IP $(wget -qO- ipv4.icanhazip.com) FUE RECHAZADA!"
         echo -e " $link No AUTORIZADA el ACCESO "
-        echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
+        echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @Jerry_SBG"
         msg -bar
         [[ -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
         [[ -e /bin/downloadbot ]] && rm -f /bin/downloadbot
@@ -352,7 +353,7 @@ function_verify() {
         msg -bar
         echo -e "\e[32m      LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!"
         [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
-        v1=$(curl -sSL "https://raw.githubusercontent.com/JerrySBG/Multi-Script/main/ChuGH-5.7u/adm-lite/v-local.log")
+        v1=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/adm-lite/v-local.log")
         [[ ! -e /bin/downloadbot ]] && {
             [[ $link = 'https://raw.githubusercontent.com' ]] && echo "https://raw.githubusercontent.com" >/bin/downloadbot || echo "$(ofus $keybot)" >/bin/downloadbot
             chmod +x /bin/downloadbot
@@ -453,10 +454,10 @@ atualiza_fun() {
     done
     mkdir -p /etc/SCRIPT
     mv -f /root/update/* /etc/SCRIPT/
-    wget -q -O /usr/bin/sbg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Menu-Bash/gerador.sh && chmod +rwx /usr/bin/gerar
+    wget -q -O /usr/bin/sbg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Menu-Bash/gerador.sh && chmod +rwx /usr/bin/sbg
     cd $HOME
     msg -bar
-    echo -e "\033[1;92m           DIGITE EL COMANDO: \033[1;33msbg  "
+    echo -e "\033[1;92m           DIGITE EL COMANDO: \033[1;33mgerar  "
     msg -bar
     [[ -e $HOME/lista ]] && rm $HOME/lista
     [[ -d $HOME/update ]] && rm -rf $HOME/update
