@@ -1,17 +1,15 @@
 ##!/bin/bashlink
 #Instalador del BOT
-rm -rf install.sh
-clear
 coo=1
 IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
 rm -f gera*
-source <(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/msg) >/dev/null
+source <(curl -sSL https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/msg) >/dev/null
 #!/bin/bash
 
 # menu maker (opciones 1, 2, 3,.....)
 
-flech='➮' cOlM='⁙' && TOP='‣' && TTini='=====>>►► ⚜️' && TTfin='⚜️ ◄◄<<=====' && TTcent='💥' && RRini='【  ★' && RRfin='★  】' && CHeko='✅' && ScT='🛡️' && FlT='⚔️' && BoLCC='🪦' && ceLL='🧬' && aLerT='⚠️' && lLaM='🔥' && pPIniT='∘' && bOTg='🤖' && rAy='⚡' && tTfIn='】' && TtfIn='【' tTfLe='►' && rUlq='🔰' && h0nG='🍄' && lLav3='🗝️' && m3ssg='📩' && pUn5A='⚜' && p1t0='•'
+flech='➮' cOlM='⁙' && TOP='‣' && TTini='=====>>►► 🐲' && TTfin='🐲 ◄◄<<=====' && TTcent='💥' && RRini='【  ★' && RRfin='★  】' && CHeko='✅' && ScT='🛡️' && FlT='⚔️' && BoLCC='🪦' && ceLL='🧬' && aLerT='⚠️' && lLaM='🔥' && pPIniT='∘' && bOTg='🤖' && rAy='⚡' && tTfIn='】' && TtfIn='【' tTfLe='►' && rUlq='🔰' && h0nG='🍄' && lLav3='🗝️' && m3ssg='📩' && pUn5A='⚜' && p1t0='•'
 cOpyRig='©' && mbar2=' •••••••••••••••••••••••'
 
 menu_func() {
@@ -46,7 +44,7 @@ tittle() {
     [[ -z $1 ]] && rt='adm-lite' || rt='ADMcgh'
     clear && clear
     msg -bar
-    echo -e "\033[1;44;44m   \033[1;33m=====>>►► ⚜️ JerrySBG 💥 Plus ⚜️ ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
+    echo -e "\033[1;44;44m   \033[1;33m=====>>►► 🐲 ChumoGH 💥 Plus 🐲 ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
     msg -bar
 }
 in_opcion() {
@@ -204,7 +202,7 @@ del() {
 }
 
 [[ -d /bin/ejecutar ]] && {
-    [[ -e /bin/ejecutar/msg ]] || wget -q -O /bin/ejecutar/msg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/msg
+    [[ -e /bin/ejecutar/msg ]] || wget -q -O /bin/ejecutar/msg https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/msg
 } || mkdir /bin/ejecutar
 cor[0]="\033[0m"
 cor[1]="\033[1;34m"
@@ -341,7 +339,7 @@ function_verify() {
         echo -e "\n"
         echo -e "\e[31m    LA IP $(wget -qO- ipv4.icanhazip.com) FUE RECHAZADA!"
         echo -e " $link No AUTORIZADA el ACCESO "
-        echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @Jerry_SBG"
+        echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
         msg -bar
         [[ -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
         [[ -e /bin/downloadbot ]] && rm -f /bin/downloadbot
@@ -353,7 +351,7 @@ function_verify() {
         clear && clear
         msg -bar
         echo -e "\e[32m      LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!"
-        [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
+        [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
         v1=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/adm-lite/v-local.log")
         [[ ! -e /bin/downloadbot ]] && {
             [[ $link = 'https://raw.githubusercontent.com' ]] && echo "https://raw.githubusercontent.com" >/bin/downloadbot || echo "$(ofus $keybot)" >/bin/downloadbot
@@ -365,8 +363,8 @@ function_verify() {
             echo $lv >/etc/nivbot
         } || echo "1" >/etc/nivbot
         echo $Key >/etc/valkey && chmod +x /etc/valkey
-        [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
-        [[ -e /bin/ShellBot.sh ]] && wget -O /bin/ShellBot.sh https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/ShellBot.sh >/dev/null && chmod +rwx /bin/ShellBot.sh
+        [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
+        [[ -e /bin/ShellBot.sh ]] && wget -O /bin/ShellBot.sh https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/ShellBot.sh >/dev/null && chmod +rwx /bin/ShellBot.sh
 
         sleep 3s
     }
@@ -417,7 +415,7 @@ ofus() {
 }
 
 DOWS() {
-    wget -O /root/lista https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/lista
+    wget -O /root/lista https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/lista
     wget --no-check-certificate -i $HOME/lista
 }
 
@@ -455,10 +453,10 @@ atualiza_fun() {
     done
     mkdir -p /etc/SCRIPT
     mv -f /root/update/* /etc/SCRIPT/
-    wget -q -O /usr/bin/gerar https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Menu-Bash/gerador.sh && chmod +rwx /usr/bin/gerar
+    wget -q -O /usr/bin/sbg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Menu-Bash/gerador.sh && chmod +rwx /usr/bin/gerar
     cd $HOME
     msg -bar
-    echo -e "\033[1;92m           DIGITE EL COMANDO: \033[1;33mgerar  "
+    echo -e "\033[1;92m           DIGITE EL COMANDO: \033[1;33msbg  "
     msg -bar
     [[ -e $HOME/lista ]] && rm $HOME/lista
     [[ -d $HOME/update ]] && rm -rf $HOME/update
