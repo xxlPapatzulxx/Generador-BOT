@@ -457,7 +457,7 @@ atualiza_fun() {
     wget -q -O /usr/bin/sbg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Menu-Bash/gerador.sh && chmod +x /usr/bin/sbg
     cd $HOME
     msg -bar
-    echo -e "\033[1;92m           DIGITE EL COMANDO: \033[1;33mgerar  "
+    echo -e "\033[1;92m           DIGITE EL COMANDO: \033[1;33msbg  "
     msg -bar
     [[ -e $HOME/lista ]] && rm $HOME/lista
     [[ -d $HOME/update ]] && rm -rf $HOME/update
