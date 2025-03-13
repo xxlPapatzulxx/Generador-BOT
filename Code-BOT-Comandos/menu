@@ -37,7 +37,7 @@ bot_retorno="  ☣️ MENU PRINCIPAL 🅹🅴🆁🆁🆈|🆂🅱🅶 $(cat < /
 		#	 }
 			 #msj_fun
 		 else
-		 	[[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/menu_credito")"
+		 	[[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Otros/menu_credito")"
 		 	numkey_used=$(grep -o -i $message_chat_id /etc/gerar-sh-log | wc -l)
 			numkey_gen=$(grep -o -i $message_chat_id /etc/ADM-db/num-key.cont | wc -l)
 			data_user=$(cat ${CID}|grep "${chatuser}" | awk -F "|" '{print $2}')
