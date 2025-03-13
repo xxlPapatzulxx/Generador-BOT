@@ -129,7 +129,7 @@ bot_retorno="$LINE\n"
           bot_retorno+=" ID Eliminado: ${ids}\n"
           bot_retorno+="$LINE\n"
 			
-          bot_retor="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  Nuevamente 𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  JerrySBG  🎊\n"
+          bot_retor="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  Nuevamente 𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  xxlPapatzulxx  🎊\n"
           #bot_retor+="𝙃𝙤𝙡𝙖 『 $message_from_first_name $message_from_last_name 』\n"
           bot_retor+="Desafortunadamente tu Membresia ha Finalizado\n"
           #bot_retor+=" ⌚⌚ Hora Actual del Bot : ⌚⌚\n"
@@ -195,7 +195,7 @@ for i in $(cat /etc/ADM-db/User-ID | awk '{print $3}'); do
 [[ "$(date -d $(date '+%C%y-%m-%d') +%s)" -ge "$(date -d $i +%s)" ]] && {
 for id in $(cat /etc/ADM-db/User-ID | grep "$i" | awk '{print $1}' | sed -e 's/[^a-z0-9 -]//ig'); do
 sed -i "/${id}/d" /etc/ADM-db/User-ID
-          bot_retor="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  Nuevamente 𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  JerrySBG  🎊\n"
+          bot_retor="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  Nuevamente 𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  xxlPapatzulxx  🎊\n"
           bot_retor+=" SU MEMBRESIA HA FINALIZADO POR CHECK ID\n"
           bot_retor+=" FIN DE CONTRADO : $(date '+%C%y-%m-%d') - $(date +%R) \n"
           bot_retor+=" SI DESEAS APELAR TU CONTRADO, CONTACTA CON $(cat < /etc/ADM-db/resell)\n"

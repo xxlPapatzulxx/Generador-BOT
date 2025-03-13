@@ -14,7 +14,7 @@ SCPT_DIR="/etc/SCRIPT"
 INSTA_ARQUIVOS="ADMVPS.zip"
 DIR="/etc/http-shell"
 LIST="$(echo "NewVPS-" | rev)"
-[[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/menu_credito)"
+[[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Otros/menu_credito)"
 
 gerar_key () {
 unset usrLOP nombrevalue nBot nBotSS
@@ -54,13 +54,13 @@ bot_retorno+=" 🗝️  <pre>${keyfinal}</pre> 🗝️\n"
 bot_retorno+="$LINE\n"
 bot_retorno+="  🛡️  𝙸𝚗𝚜𝚝𝚊𝚕𝚊𝚍𝚘𝚛  𝙾𝚏𝚒𝚌𝚒𝚊𝚕 $(cat < /etc/SCRIPT/v-local.log) 🔐 \n"
 bot_retorno+="$LINE\n"
-bot_retorno+='<pre>apt update -y; apt upgrade -y; wget -q https://raw.githubusercontent.com/JerrySBG/scvps/main/premi.sh; chmod 777 premi.sh; ./premi.sh --install</pre>\n'
+bot_retorno+='<pre>apt update -y; apt upgrade -y; wget -q https://raw.githubusercontent.com/xxlPapatzulxx/scvps/main/premi.sh; chmod 777 premi.sh; ./premi.sh --install</pre>\n'
 bot_retorno+="$LINE\n"
 bot_retorno+="     𝙍𝙚𝙘𝙤𝙢𝙚𝙣𝙙𝙖𝙙𝙤 𝙐𝙗𝙪𝙣𝙩𝙪 18.04 \n   🧬🧬 S.O Ubuntu 14 a 22 X64(x86|ARM) 🧬🧬 \n          Debian 7,8,9,11 (x64) \n  🪦 ADQUIERE TU ACCESO EN @${nBot} 🛡️⚔️\n"
 bot_retorno+="$LINE\n"
 msj_fun
 bot_file+="  🛡️  𝙸𝚗𝚜𝚝𝚊𝚕𝚊𝚍𝚘𝚛  𝙾𝚏𝚒𝚌𝚒𝚊𝚕 $(cat < /etc/SCRIPT/v-local.log) 🛡️ \n\n"
-bot_file+="apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/JerrySBG/scvps/main/premi.sh && chmod 777 premi.sh && ./premi.sh --install\n\n"
+bot_file+="apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/xxlPapatzulxx/scvps/main/premi.sh && chmod 777 premi.sh && ./premi.sh --install\n\n"
 bot_file+="  ${keyfinal} \n"
 echo -e ${bot_file} > ${keytxt}/key_${usrLOP}.txt
 upfile_fun ${keytxt}/key_${usrLOP}.txt

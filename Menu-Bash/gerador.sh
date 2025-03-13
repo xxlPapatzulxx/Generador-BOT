@@ -42,7 +42,7 @@ tittle() {
     [[ -z $1 ]] && rt='adm-lite' || rt='ADMcgh'
     clear && clear
     msg -bar
-    echo -e "\033[1;44;44m   \033[1;33m=====>>►► ⚜️ JerrySBG 💥 Plus ⚜️ ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
+    echo -e "\033[1;44;44m   \033[1;33m=====>>►► ⚜️ xxlPapatzulxx 💥 Plus ⚜️ ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
     msg -bar
 }
 in_opcion() {
@@ -223,7 +223,7 @@ tittle() {
     killall kswapd0 ksoftirqd >/dev/null 2>&1
     clear && clear
     msg -bar
-    echo -e "  \033[7;49;35m${TTini} GEN JerrySBG${TTcent}VPS ${TTfin}   \033[0m"
+    echo -e "  \033[7;49;35m${TTini} GEN xxlPapatzulxx${TTcent}VPS ${TTfin}   \033[0m"
 }
 
 check_ip() {
@@ -283,8 +283,8 @@ LIST="-SPVweN"
 wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/adm-lite/v-local.log &>/dev/null
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat <${SCPT_DIR}/v-local.log)
-txt[315]=" ${FlT} JerrySBG Keygen ${FlT} IS UPDATED!"
-txt[316]=" ${aLerT} JerrySBG Keygen ${aLerT} NEEDS UPDATE!"
+txt[315]=" ${FlT} xxlPapatzulxx Keygen ${FlT} IS UPDATED!"
+txt[316]=" ${aLerT} xxlPapatzulxx Keygen ${aLerT} NEEDS UPDATE!"
 
 meu_ip() {
     MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
@@ -428,7 +428,7 @@ fix_key() {
     #$(cat < /etc/ADM-db/resell)
     msg -bar
     echo -e " ${ScT}  *INSTALADOR UNIVERSAL*   ${ScT}"
-    msg -bar && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
+    msg -bar && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/xxlPapatzulxx/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
     msg -bar
     [[ -e /etc/menu_numito ]] && menumito="$(cat /etc/menu_numito)" || menumito="https://t.me/ChumoGH_bot"
     [[ -z $vkey ]] && vkey="@Jerry_SBG"
@@ -646,7 +646,7 @@ bot_menu() {
     ) && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
     rm -rf /etc/ADM-db
     CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-    [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Code-BOT-General/intBOT.sh &>/dev/null && chmod +rwx ${CIDdir}/confbot.sh
+    [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Code-BOT-General/intBOT.sh &>/dev/null && chmod +rwx ${CIDdir}/confbot.sh
     sed -i -e 's/\r$//' ${CIDdir}/confbot.sh
     source ${CIDdir}/confbot.sh && rm -f ${CIDdir}/confbot.sh
     bot_conf

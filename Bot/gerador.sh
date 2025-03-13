@@ -4,7 +4,7 @@ unset readvalue
 [[ ! -d /etc/http-shell ]] && mkdir /etc/http-shell
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas menu_inst PPub.py usercodes payloads ssl paysnd.sh verifica PDirect.py v-local.log PGet.py ultrahost menu POpen.py shadowsocks.sh fai2ban PPriv.py"
 IVAR="/etc/http-instas"
-source <(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/msg) >/dev/null
+source <(curl -sSL https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Otros/msg) >/dev/null
 #!/bin/bash
 # menu maker (opciones 1, 2, 3,.....)
 flech='➮' cOlM='⁙' && TOP='‣' && TTini='=====>>►► ⚜️' && cG='/c' && TTfin='⚜️ ◄◄<<=====' && TTcent='💥' && RRini='【  ★' && RRfin='★  】' && CHeko='✅' && ScT='🛡️' && FlT='⚔️' && BoLCC='🪦' && ceLL='🧬' && aLerT='⚠️' && _kl1='ghkey' && lLaM='🔥' && pPIniT='∘' && bOTg='🤖' && kL10='tc' && rAy='⚡' && tTfIn='】' && TtfIn='【' tTfLe='►' && am1='/e' && rUlq='🔰' && h0nG='🍄' && lLav3='🗝️' && m3ssg='📩' && pUn5A='⚜' && p1t0='•' nib="${am1}${kL10}"
@@ -42,7 +42,7 @@ tittle() {
     [[ -z $1 ]] && rt='adm-lite' || rt='ADMcgh'
     clear && clear
     msg -bar
-    echo -e "\033[1;44;44m   \033[1;33m=====>>►► ⚜️ JerrySBG 💥 Plus ⚜️ ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
+    echo -e "\033[1;44;44m   \033[1;33m=====>>►► ⚜️ xxlPapatzulxx 💥 Plus ⚜️ ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
     msg -bar
 }
 in_opcion() {
@@ -201,7 +201,7 @@ del() {
 
 [[ -d /bin/ejecutar ]] && {
     [[ ! -e /etc/cghkey ]] && rm -rf /etc/adm-lite
-    [[ -e /bin/ejecutar/msg ]] || wget -q -O /bin/ejecutar/msg https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/msg
+    [[ -e /bin/ejecutar/msg ]] || wget -q -O /bin/ejecutar/msg https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Otros/msg
 } || mkdir /bin/ejecutar
 cor[0]="\033[0m"
 cor[1]="\033[1;34m"
@@ -223,7 +223,7 @@ tittle() {
     killall kswapd0 ksoftirqd >/dev/null 2>&1
     clear && clear
     msg -bar
-    echo -e "  \033[7;49;35m${TTini} GEN JerrySBG${TTcent}VPS ${TTfin}   \033[0m"
+    echo -e "  \033[7;49;35m${TTini} GEN xxlPapatzulxx${TTcent}VPS ${TTfin}   \033[0m"
 }
 
 check_ip() {
@@ -280,11 +280,11 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
 DIR="/etc/http-shell"
 LIST="-SPVweN"
-wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/v-local.log &>/dev/null
+wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Otros/v-local.log &>/dev/null
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat <${SCPT_DIR}/v-local.log)
-txt[315]=" ${FlT} JerrySBG Keygen ${FlT} IS UPDATED!"
-txt[316]=" ${aLerT} JerrySBG Keygen ${aLerT} NEEDS UPDATE!"
+txt[315]=" ${FlT} xxlPapatzulxx Keygen ${FlT} IS UPDATED!"
+txt[316]=" ${aLerT} xxlPapatzulxx Keygen ${aLerT} NEEDS UPDATE!"
 
 meu_ip() {
     MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
@@ -402,7 +402,7 @@ fix_key() {
     read -p " RESELLER deL Keys : " nomkey
     [[ $nomkey = 0 ]] && return
     [[ -z $nomkey ]] && {
-        [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/menu_credito)"
+        [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Otros/menu_credito)"
     }
     msg -bar
     echo " Bienvenido, Porfavor ingresa el numero de keys a generar"
@@ -428,7 +428,7 @@ fix_key() {
     #$(cat < /etc/ADM-db/resell)
     msg -bar
     echo -e " ${ScT}  *INSTALADOR UNIVERSAL*   ${ScT}"
-    msg -bar && echo -ne "$(msg -aqua "\033[7;49;35m wget -q https://raw.githubusercontent.com/JerrySBG/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
+    msg -bar && echo -ne "$(msg -aqua "\033[7;49;35m wget -q https://raw.githubusercontent.com/xxlPapatzulxx/SBG/main/sbg.sh && chmod 777 sbg.sh && ./sbg.sh --install"
     msg -bar
     [[ -e /etc/menu_numito ]] && menumito="$(cat /etc/menu_numito)" || menumito="https://t.me/Jerry_SBG"
     [[ -z $vkey ]] && vkey="@Jerry_SBG"
@@ -646,7 +646,7 @@ bot_menu() {
     ) && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
     rm -rf /etc/ADM-db
     CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-    [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Code-BOT-General/intBOT.sh &>/dev/null && chmod +rwx ${CIDdir}/confbot.sh
+    [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Code-BOT-General/intBOT.sh &>/dev/null && chmod +rwx ${CIDdir}/confbot.sh
     sed -i -e 's/\r$//' ${CIDdir}/confbot.sh
     source ${CIDdir}/confbot.sh && rm -f ${CIDdir}/confbot.sh
     bot_conf
@@ -665,7 +665,7 @@ fum_ver() {
     echo -e "\n"
     echo -e " FILE Contend : ${REQUEST} $(echo ${REQUEST} | wc -c)"
     echo -e "\n"
-    echo -e " VERIFICA, Si tu key Contiene \033[1;45m KEY DE JerrySBG! \033[0m "
+    echo -e " VERIFICA, Si tu key Contiene \033[1;45m KEY DE xxlPapatzulxx! \033[0m "
     echo -e "\n"
     msg -ne " Link Key: http://$(ofus $Keey) \n                      "
     IiP=$(ofus "$Keey" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')
@@ -694,7 +694,7 @@ fum_ver() {
     msg -ne " \033[1;42mESTADO :\033[0m "
     [[ -e $HOME/list-key ]] && {
         echo -ne "  "
-        [[ $ofen = "KEY DE JerrySBG!" ]] &&
+        [[ $ofen = "KEY DE xxlPapatzulxx!" ]] &&
             echo -e "KEY FUNCIONAL" && rm -f $HOME/list-key && echo -ne "\033[0m"
     } || echo -e " KEY INVALIDA O USADA\033[0m\n"
     #curl -s --connect-timeout 2 ${IiP}:81/${REQUEST}/menu_credito > menu_credito

@@ -1,5 +1,5 @@
 #!/bin/bash
-[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Otros/msg)
+[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Otros/msg)
 bar="$(msg -bar3)"
 [[ -e /etc/systemd/system/btkill.service ]] && systemctl restart btkill.service &>/dev/null
 tr=${id}
@@ -47,7 +47,7 @@ echo "$IP" > /usr/bin/vendor_code
 }
 function_verify () {
 unset keybot
-echo -e "\033[7;49;35m    =====>>►► ⚜️ GEN JerrySBG${TTcent}VPS ⚜️ ◄◄<<=====      \033[0m"
+echo -e "\033[7;49;35m    =====>>►► ⚜️ GEN xxlPapatzulxx${TTcent}VPS ⚜️ ◄◄<<=====      \033[0m"
 msg -bar
 [[ "$(echo "$(cat < /etc/nivbot)")" -ge "5" ]] && {
 [[ -e /bin/downloadbot ]] && {
@@ -57,9 +57,9 @@ msg -bar
 [[ -z $keybot ]] && {
 rm -f /bin/downloadbot
 [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
-permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}') 
+permited=$(curl -sSL ${link}/xxlPapatzulxx/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}') 
 } || {
-permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}')
+permited=$(curl -sSL ${link}/xxlPapatzulxx/Generador-BOT/main/Bot/Control-Bot | awk '{print $1}')
 }
   [[ $(echo $permited|grep "${IP}") = "" ]] || {
   clear
@@ -84,7 +84,7 @@ permited=$(curl -sSL ${link}/JerrySBG/Generador-BOT/main/Bot/Control-Bot | awk '
   lv=$(($i+1))
   echo $lv > /etc/nivbot
   } || echo "1" > /etc/nivbot
-  v1=$(curl -sSL https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Bot/v-new.log)
+  v1=$(curl -sSL https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Bot/v-new.log)
   echo "$v1" > /etc/ADM-db/vercion  
   }
 }
@@ -131,7 +131,7 @@ echo "TOKEN APLICADO EXITOSAMENTE"
 systemctl restart BotGen-server &>/dev/null
 }
 echo -e "$bar\n"
-echo -e " AGREGA NUEVO URL DE CATALOGO / OPCIONAL \n  https://t.me/@JerrySBG/  \n"
+echo -e " AGREGA NUEVO URL DE CATALOGO / OPCIONAL \n  https://t.me/@xxlPapatzulxx/  \n"
 echo -e "$bar"
 read -p "TEXTO: " nmsg
 [[ -z $nmsg ]] && return || { 
@@ -241,7 +241,7 @@ msg -bar
 echo -e "\033[1;33mDescargando archivos... ESPERE "
 msg -bar
 mkdir -p /root/update &>/dev/null
-wget -q --no-check-certificate -O $HOME/files.tar https://raw.githubusercontent.com/JerrySBG/Generador-BOT/main/Code-BOT-Comandos/files.tar
+wget -q --no-check-certificate -O $HOME/files.tar https://raw.githubusercontent.com/xxlPapatzulxx/Generador-BOT/main/Code-BOT-Comandos/files.tar
 [[ -d $HOME/update ]] && rm -rf $HOME/update/* || mkdir $HOME/update
 [[ -e $HOME/files.tar ]] && tar xpf $HOME/files.tar -C $HOME/update && rm -f $HOME/files.tar
 echo 999 > ${CIDdir}/limit
